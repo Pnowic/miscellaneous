@@ -1,0 +1,48 @@
+/*input*/
+$mobile-up: "screen and (min-width: 768px)";
+$slider-color-gold: #C6A119;
+$slider-color-red: #AA2C0E;
+
+input[type="range"] {
+  outline: none;
+  border: none;
+  transform: rotate(270deg);
+  width: 50vh;
+  -webkit-appearance: none;
+  background: $slider-color-red;
+  border-radius: 15px;
+  transition: all 1s linear;
+  @media#{$mobile-up} { /*styles for screens wider than 767 px*/
+    transform: none;
+    width: 20vw;
+    background: $slider-color-gold;
+  }
+  &::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    background: $slider-color-gold;
+    @media#{$mobile-up}{ /*styles for screens wider than 767 px*/
+      background: $slider-color-red;
+    }
+  }
+  &::-moz-range-thumb{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    background: $slider-color-gold;
+    @media#{$mobile-up}{ /*styles for screens wider than 767 px*/
+      background: $slider-color-red;
+    }
+  }
+  &::-ms-thumb{
+    height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    background: $slider-color-gold;
+    @media#{$mobile-up}{ /*styles for screens wider than 767 px*/
+      background: $slider-color-red;
+    }
+  }
+}
