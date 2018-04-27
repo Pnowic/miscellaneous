@@ -12,5 +12,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: -o-linear-gradient(transparent, black);
+  background-image: -webkit-linear-gradient(transparent, black);
+  background-image: -moz-linear-gradient(transparent, black);
+  background-image: -ms-linear-gradient(transparent, black);
+  background-image: linear-gradient(transparent, black);
   transition: all 1s ease;
 }
